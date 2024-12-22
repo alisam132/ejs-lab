@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+</head>
+<body>
+  <h1>Categories</h1>
+  <ol>
+    <% categories.forEach(function(element) { %>
+        <li> Category Name:<%= element %></li>
+     <% }); %>     
+    </ol>
+    <ul>
+        <% menuItem.forEach(function(element) { %>
+            <li> Name:<%= element.name %>,  Price:<%= element.price %>,  Rating:<%= element.rating %>,  Details:<%= element.details %></li>
+         <% }); %> 
+    </ul>
+</body>
+</html>
